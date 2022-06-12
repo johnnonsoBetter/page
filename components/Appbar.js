@@ -4,7 +4,7 @@
 export default function Appbar() {
   
   return (
-      <nav style={{backgroundColor: "#0D0D0D"}} class="relative   ">
+      <nav  class="relative  bg-deepblack ">
           <div class="  w-full  flex flex-wrap items-center justify-between p-4">
             
               <a class="   text-black" href="/">

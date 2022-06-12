@@ -23,10 +23,11 @@ export default function Home() {
       
    
     
-      <main class='border-0' >
-        <div class='border-0 p-1' 
+      <main class='border-0'  >
+        <div class='border-0 h-[6px] ' 
       style={{
-          background: "linear-gradient(to right,  #665AEF 6.04%, #FC364C 88.42%);"
+        
+          background: "linear-gradient(95.91deg, #665AEF 6.04%, #FC364C 88.42%)"
 
         }}
         >
@@ -34,28 +35,27 @@ export default function Home() {
         
         <div class='p-6 relative' >
           <div class=" w-full">
-            <img src='/image1.png' alt='image' class="object-fit rounded h-48 w-full" />
+            <img src='/image1.png' alt='image' class="object-cover rounded h-48 w-full" />
           </div>
           <div  class='w-full relative flex justify-center'>
-             <img src='/elipse.jpg' alt='image' class="absolute  max-w-sm w-28 -bottom-16 rounded-full border-0 " />
+             <img src='/elipse.jpg' alt='image' class="absolute   w-[149] -bottom-16 rounded-full border-0 " />
           </div>
           
         </div>
         
-        <div class='text-center h-48 flex items-center flex-col justify-center mt-10' >
-          <h1 class='text-white font-extrabold font-medium text-3xl mt-2 '> 
+        <div class='text-center  h-48 flex items-center flex-col justify-center mt-10' >
+          <h1 class='text-white font-extrabold  text-4xl mt-2 '> 
             Lorem ipsum
           </h1>
           
-          <p class='text-white font-medium text-1xl mt-2 mb-2' >
+          <p class='text-white font-normal  mt-2 mb-2' >
           Created by:
           <span class='text-red-900' > Lorem ipsum </span>
           
           </p>
           
-           <p class='text-white  font-medium text-1xl mt-2 mb-2' >
-          how are we going to make 
-          the same timer that we 
+           <p class='text-white  font-normal text-1xl mt-2 mb-2' >
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
           </p>
           
   
@@ -66,20 +66,25 @@ export default function Home() {
         
         
         
-        <div class="grid text-center  mt-20 px-6 gap-4 grid-cols-2 grid-rows-3">
+        <div className=' w-full flex justify-center mt-20' >
+
+                <div class="grid text-center w-[80%]   gap-4 grid-cols-2 grid-rows-3">
           
-            <div >
-              <Accordion />
-            </div>
-            
-              <div >
-                <Accordion />
-            </div>
-            
-            <div >
-              column 3 
-            </div>
+                    <div  >
+                      <Accordion  />
+                    </div>
+                    
+                      <div >
+                        <Accordion showHelpIcon />
+                    </div>
+                    
+                    <div >
+                      column 3 
+                    </div>
+                </div>
+
         </div>
+
       </main>
       
     

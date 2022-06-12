@@ -15,12 +15,12 @@ export default function HotLinks() {
               iconUrls.map(url => {
                 
                 return (
-                      <div key={url} class='bg-black px-4 py-2 rounded ' > 
+                      <div key={url} class={url === 'ri-apps-2-line' ? 'h-[50px] w-[184px] flex items-center justify-center  bg-deepblack  rounded '  : 'bg-tpblack h-[50px] w-[184px] flex items-center justify-center rounded '}    > 
                      <div class="flex space-x-2 items-center justify-center" >
                 
                 <i class={url}></i>
 
-                <span class='font-small text-1xs text-white'>
+                <span class='font-extrabold  text-1xs text-white'>
                   Lorem ipsum
                 </span>
           

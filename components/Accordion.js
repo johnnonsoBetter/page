@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react' 
 
 
-export default function Accordion({contentToRender, showHelpIcon}) {
+export default function Accordion({contentToRender, showHelpIcon = false}) {
   
   const [height, setHeight] = useState('0px')
   const [active, setActive] = useState(false)
@@ -16,20 +16,28 @@ export default function Accordion({contentToRender, showHelpIcon}) {
   }
   
   return (
-      <div  className="flex rounded p-2 flex-col">
+      <div  className="flex rounded p-7 flex-col" style={{background: "rgba(13, 13, 13, 0.5);"}}>
       <button
-        className="py-6 box-border bg-dark-900  appearance-none cursor-pointer focus:outline-none flex items-center justify-start"
+        className=" box-border  appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
         onClick={toggleAccordion}
       >
-      <i class="ri-apps-2-line"></i>
-        <p className="inline-block text-footnote text-white light">Hello</p>
-        
+      <div className="flex items-center">
+
+        <i class="ri-apps-2-line text-white mr-2"></i>
+        <p className="inline-block text-footnote font-extrabold text-white light">Lorem ipsum</p>
+       
         {
-          active ?
-          <i class="ri-arrow-down-s-line"></i>
-          :
-          <i class="ri-arrow-up-s-line"></i>
+          showHelpIcon &&  <i class="ri-question-line ml-1" style={{color: '#A2A2A2'}}></i>
         }
+
+      </div>
+      {
+          active ?
+          <i class="ri-arrow-up-s-line text-white font-extrabold"></i>
+          :
+          <i class="ri-arrow-down-s-line text-white"></i>
+        }
+      
         
       </button>
       <div
