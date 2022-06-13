@@ -25,7 +25,8 @@ export default function Appbar() {
             
               <Link className="   text-black" href="/">
               
-                <Image className="max-w-full h-5" width="195px" height="23px" src='/logo.png' alt='logo' />
+                <Image width={195}
+      height={23} src='/logo.png' alt='logo' />
               </Link>
             
             
@@ -34,9 +35,29 @@ export default function Appbar() {
               <Search />
 
      
-              <Link  className='text-white font-extrabold mx-2  text-sm' href="#">Lorem</Link>
-              <Link  className='text-white font-extrabold mx-3  text-sm  ' href="#">Lorem</Link>
-              <Link  className='text-white font-extrabold mx-2 text-sm  ' href="#">Lorem</Link>
+            
+              
+              <Link href="#" >
+              
+                <span  className='text-white font-extrabold mx-2  text-sm' >Lorem</span>
+              
+              </Link>
+              
+               <Link href="#" >
+              
+                <span  className='text-white font-extrabold mx-2  text-sm' >Lorem</span>
+              
+              </Link>
+              
+                 <Link href="#" >
+              
+                <span  className='text-white font-extrabold mx-2  text-sm' >Lorem</span>
+              
+              </Link>
+              
+              
+              
+              
             
             </div>
           </div>

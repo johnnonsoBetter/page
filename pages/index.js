@@ -42,10 +42,16 @@ export default function Home() {
     
     <div className='p-6 relative' >
     <div className=" w-full">
-    <Image src='/image1.png' alt='image' className="object-cover rounded h-48 w-full" />
+    <Image src='/image1.png' width={1750} height={400} alt='image' className="object-cover rounded  w-full" />
     </div>
     <div  className='w-full relative flex justify-center'>
-    <img src='/elipse.jpg' alt='image' className="absolute   w-[149] -bottom-16 rounded-full border-0 " />
+    <div className=" absolute   w-[149] -bottom-16 rounded-full border-0 
+    " >
+    
+          <Image src='/elipse.jpg' width={149} height={149} alt='image' className="absolute   w-[149] -bottom-1 top-9 rounded-full border-0 " />
+    
+    </div>
+
     </div>
     
     </div>
