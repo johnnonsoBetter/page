@@ -34,9 +34,9 @@ export default function Appbar() {
               <Search />
 
      
-              <a  className='text-white font-extrabold mx-2  text-sm' href="#">Lorem</a>
-              <a  className='text-white font-extrabold mx-3  text-sm  ' href="#">Lorem</a>
-              <a  className='text-white font-extrabold mx-2 text-sm  ' href="#">Lorem</a>
+              <Link  className='text-white font-extrabold mx-2  text-sm' href="#">Lorem</Link>
+              <Link  className='text-white font-extrabold mx-3  text-sm  ' href="#">Lorem</Link>
+              <Link  className='text-white font-extrabold mx-2 text-sm  ' href="#">Lorem</Link>
             
             </div>
           </div>
