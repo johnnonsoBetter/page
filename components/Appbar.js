@@ -26,7 +26,7 @@ export default function Appbar() {
               <Link className="   text-black" href="/">
               
                 <Image className="max-w-full h-5" width="195px" height="23px" src='/logo.png' alt='logo' />
-              </a>
+              </Link>
             
             
             <div className="flex items-center">
