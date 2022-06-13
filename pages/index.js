@@ -17,7 +17,7 @@ export default function Home() {
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
     
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet"/>
     </Head>
@@ -42,7 +42,7 @@ export default function Home() {
     
     <div className='p-6 relative' >
     <div className=" w-full">
-    <img src='/image1.png' alt='image' className="object-cover rounded h-48 w-full" />
+    <Image src='/image1.png' alt='image' className="object-cover rounded h-48 w-full" />
     </div>
     <div  className='w-full relative flex justify-center'>
     <img src='/elipse.jpg' alt='image' className="absolute   w-[149] -bottom-16 rounded-full border-0 " />

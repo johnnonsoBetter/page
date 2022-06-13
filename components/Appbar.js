@@ -1,4 +1,5 @@
-
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Search = () => {
 
@@ -22,8 +23,9 @@ export default function Appbar() {
       <nav  className="relative  bg-deepblack ">
           <div className="  w-full  flex flex-wrap items-center justify-between p-4">
             
-              <a className="   text-black" href="/">
-                <img className="max-w-full h-5" width="195px" height="23px" src='/logo.png' alt='logo' />
+              <Link className="   text-black" href="/">
+              
+                <Image className="max-w-full h-5" width="195px" height="23px" src='/logo.png' alt='logo' />
               </a>
             
             
